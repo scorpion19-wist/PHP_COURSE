@@ -3,8 +3,7 @@
     "@tailwindcss/cli": "^4.1.17",
     "tailwindcss": "^4.1.17"
   },
-  "scripts": 
-  {
-    "start:css" : "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/global.css --watch"}
-
+  "scripts": {
+    "start:css": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/global.css --watch"
+  }
 }

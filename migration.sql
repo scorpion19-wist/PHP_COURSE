@@ -52,9 +52,35 @@ CREATE TABLE loisirs (
     description TEXT
 );
 
+
+---Insertion dans la table competences---
 iNSERT INTO competences (nom, niveau, description) VALUES
 ('HTML', 'Debutant', 'Frontend'),
 ('CSS', 'Avancé', 'Frontend'),
 ('JavaScript', 'Intermédiaire', 'Frontend'),
 ('Python', 'Debutant', 'Backend'),
 ('SQL', 'Intermédiaire', 'Database');
+
+---Insertion dans experiences professionneles---
+INSERT INTO experiences_professionnelles (entreprise, poste, date_debut, date_fin, description) VALUES
+('Tech Solutions', 'Développeur Web Junior', '2021-06-01', '2022-08-31', 'Développement de sites web pour divers clients.'),
+('Innovatech', 'Stagiaire en Développement', '2020-01-15', '2020-06-15', 'Participation au développement d\'applications internes.');
+
+---Insertion dans formations---
+INSERT INTO formations (institution, diplome, date_obtention, description) VALUES
+('Université de la Tech', 'Licence Informatique', '2022-05-20', 'Formation axée sur le développement web et les bases de données.'),
+('Lycée Jean Moulin', 'Baccalauréat Scientifique', '2019-06-15', 'Spécialisation en mathématiques et sciences.');   
+
+---Insertion dans loisirs---
+INSERT INTO loisirs (nom, description) VALUES
+('Photographie', 'Passion pour la capture de moments et la retouche photo.'),
+('Randonnée', 'Exploration de la nature et des paysages.'), 
+('Lecture', 'Lecture de romans de science-fiction et de développement personnel.'); 
+
+---Insertion dans projets---
+INSERT INTO projets (titre, description, url, date_creation) VALUES
+('Portfolio en Ligne', 'Création d\'un site web personnel pour présenter mes compétences et projets.', 'http://monportfolio.com', '2023-03-15'),
+('Application de Gestion de Tâches', 'Développement d\'une application web pour gérer les tâches quotidiennes.', 'http://taskmanager.com', '2023-06-10');   
+
+
+---Fin de la migration---  
